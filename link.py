@@ -4,7 +4,7 @@ import os
 from twilio.rest import Client
 #first of all you need to login in twilio and openweather to get their key
 from twilio.http.http_client import TwilioHttpClient
-key = "69f04e4613056b159c"
+key = "get api key from openweater"
 web = "https://api.openweathermap.org/data/2.5/onecall"
 parameter = {
     #find you lat and lon from Latlong.net
@@ -25,8 +25,8 @@ for i in weather_day:
     if condition ==800:
         p = True
 #here you need to put your accound_sid and token which you got from twilio
-account_sid = "AC46074ee522b4f6199495f36"
-auth_token = "a99247644dfec7f6e58fe24"
+account_sid = "your sid"
+auth_token = "your token"
 if p:
     # proxy_client = TwilioHttpClient()
     # proxy_client.session.proxies = {'https':os.environ['https_proxy']}
